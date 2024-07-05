@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Backwood Profile</title>
+    <link rel="stylesheet" href="profile.css">
+</head>
+<body>
+    
+    <div class="career-projection">
+        <div>
+            <img class="slackpicture" data-testid="slackProfilePicture" src="./backWoodCode.jpg"  width="480px" height="480px" alt="profile pic">
+        </div>
+        <div class="slackDetail">
+            <h1 class="slackName" data-testid="slackDisplayName">Backwood</h1>
+        <h4 class="slackEmail" data-testid="slackEmail">adebanjo.ogunse@gmail.com</h4>
+        <hr data-testid="slackline">
+        </div>
+        
+        <div class="careerfocus">
+            <h2 data-testid="slackCareerProjection">My Career Goal and Projection in 2years</h2>
+            <p data-testid="slackCareerdplans">In the next 6 months i will be focus on NodeJs projects and other framework, management and maintaining of their environments.
+            <br>By the end of the 12 months good graps of the ReactJs and other framework to work with in any given project
+            <br>By another 16 months should be able to manage database both relational and non-relational, thereby completing my career goal stack (MERN)
+            <br>Practically, in reality this maybe faster or there maybe draw backs but by and large, by the end of 24 month i should be more ready to be full stack Software developer </p>
+        </div>
+    </div>
+    
+    <div class="link-section">
+        <ul>
+             <li><a data-testid="hnglink" href="http://hng.tech/learn">HNG/learn</a></li>
+             <li><a data-testid="keywordlink" href="http://keyword.dog">keyword.dog</a></li>
+             <li><a data-testid="scrapeanyweblink" href="http://scrapeanyweb.site">scrapeanyweb.ste</a></li>
+            
+        </ul>
+    </div>
+
+    
+    <div id="daysInWeek" data-testid="daysOfTheWeek"></div>
+    
+    <div id="daysInWeek" data-testid="timeOfTheday"></div>
+    
+    <script>
+
+    
+        function displayday(){
+        const now = new Date(); 
+        const options = {weekday:'long', hour:'numeric', minute:'numeric', second:'numeric', timeZone:'UTC'};
+        const formattedTime = now.toLocaleDateString('en-US', options);
+
+        document.getElementById('daysInWeek').textContent = formattedTime;
+    }
+        
+    displayday();
+    // setInterval(displayday, 1000);
+
+
+    </script>
+</body>
+</html>

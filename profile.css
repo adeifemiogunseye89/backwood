@@ -1,0 +1,49 @@
+
+body{
+    padding: 2rem;
+    align-items: center;
+}
+
+.slackpicture{
+    display: inline-block;
+    max-width: 100%;
+}
+.career-projection{
+    display: flex;
+    flex-wrap: wrap ;
+    font-size: 100%;
+    padding: 1rem;
+    margin: auto;
+    gap: 1rem;
+}
+.slackDetail{
+    display: inline-block;
+    padding: 1rem;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    color: black
+}
+.slackName{
+    display: inline block;
+    margin-bottom:0px;
+}
+.slackEmail{
+    display: block;
+    margin-top: none;
+}
+.career-details{
+    display: inline-block;
+}
+.careerfocus{
+    display: flex;
+    
+.p{
+    padding: 1rem;
+    border: solid 1px;
+    border-bottom: 1px solid rgba(99, 99, 99, 0.015);
+    box-shadow:2px;
+}
+
+    
+    
